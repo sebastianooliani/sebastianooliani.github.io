@@ -7,16 +7,18 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
             background-color: #f9f9f9;
             color: #333;
+            height: 100vh; /* Full screen height */
+            display: flex;
+            flex-direction: column;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
+            flex: 1;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
         h1, h2 {
             color: #0056b3;
