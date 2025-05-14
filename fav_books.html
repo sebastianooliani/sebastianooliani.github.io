@@ -3,33 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Favorites</title>
+  <title>Favourites Books</title>
   <link rel="stylesheet" href="css/style.css" /> <!-- If you have a CSS file -->
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+        height: 100vh; /* Full screen height */
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        flex: 1;
+        padding: 20px;
+        margin-left: 1cm; /* Add margin on the left */
+        margin-right: 1cm; /* Add margin on the right */
+        position: relative;
+    }
+    h1, h2 {
+        color: #0056b3;
+    }
+    .profile-pic {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px solid #0056b3;
+        object-fit: cover;
+    }
+    .section {
+        margin-bottom: 20px;
+        margin-left: 1cm; /* Add margin on the left */
+        margin-right: 1cm; /* Add margin on the right */
+    }
+    .section-title {
+        border-bottom: 2px solid #0056b3;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    .experience, .project {
+        margin-bottom: 15px;
+    }
+    .experience-title, .project-title {
+        font-weight: bold;
+    }
+    .experience-company, .project-details {
+        font-style: italic;
+        color: #555;
+    }
+    .experience-date {
+        float: right;
+        color: #777;
+    }
+    .experience-location {
+        float: left;
+        color: #777;
+    }
+    .clear {
+        clear: both;
+    }
+</style>
 </head>
 <body>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="favorites.html">Favorites</a>
+    <a href="index.html">Main</a>
+    <a href="fav_albums.html">Favourites Albums</a>
+    <a href="fav_books.html">Favourites Books</a>
   </nav>
 
   <div class="section">
-    <h2 class="section-title">Favorite Books & Albums</h2>
+    <h2 class="section-title">Favourite Books</h2>
     
     <h3>📚 Books</h3>
     <ul>
-      <li><strong>1984</strong> by George Orwell</li>
-      <li><strong>Norwegian Wood</strong> by Haruki Murakami</li>
-      <li><strong>The Name of the Wind</strong> by Patrick Rothfuss</li>
+      <li><strong>Uno, nessuno, centomila</strong> by Luigi Pirandello</li>
+      <li><strong>Ghiaccio-Nove</strong> by Kurt Vonnegut</li>
+      <li><strong>Guida Galattica per Autostoppisti</strong> by Douglas Adams</li>
+      <li><strong>Odissea</strong> by Omero</li>
+      <li><strong>Le mie risposte alle grandi domande</strong> by Stephen Hawking</li>
+      <li><strong>I, robot</strong> by Isaac Asimov</li>
+      <li><strong>Cecità</strong> by José Saramago</li>
+      <li><strong>Sostiene Pereira</strong> by Antonio Tabucchi</li>
+      <li><strong>Fight Club</strong> by Chuck Palahniuk</li>
+      <li><strong>Il sentiero dei nidi di ragno</strong> by Italo Calvino</li>
+      <li><strong>Ma gli androidi sognano pecore elettriche?</strong> by Philip K. Dick</li>
+      <li><strong>Acid for the Children</strong> by Flea</li>
+      <li><strong>Jack Frusciante è uscito dal gruppo</strong> by Enrico Brizzi</li>
+      <li><strong>Storia di una gabbianella e del gatto che le insegnò a volare</strong> by Luis Sepulveda</li>
+      <li><strong>Silicio</strong> by Federico Faggin</li>
       <!-- Add more books -->
-    </ul>
-
-    <h3>🎧 Albums</h3>
-    <ul>
-      <li><strong>Dark Side of the Moon</strong> – Pink Floyd</li>
-      <li><strong>To Pimp a Butterfly</strong> – Kendrick Lamar</li>
-      <li><strong>OK Computer</strong> – Radiohead</li>
-      <!-- Add more albums -->
     </ul>
   </div>
 
