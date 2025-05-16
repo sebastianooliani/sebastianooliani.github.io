@@ -66,14 +66,17 @@ h1, h2 {
 /* 💡 Responsive for Mobile */
 /* ======================== */
 @media (max-width: 768px) {
+    body {
+        font-size: clamp(14px, 2vw, 16px); /* smaller base size on mobile */
+    }
     .container {
         margin: 0 10px;
         padding: 10px;
     }
 
     .section {
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     nav {
