@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* Responsive font size */
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -11,8 +12,7 @@ body {
 .container {
     flex: 1;
     padding: 20px;
-    margin-left: 1cm; /* Add margin on the left */
-    margin-right: 1cm; /* Add margin on the right */
+    margin: 0 5%; /* Responsive side margins */
     position: relative;
 }
 h1, h2 {
@@ -23,15 +23,17 @@ h1, h2 {
     top: 20px;
     right: 20px;
     width: 200px;
-    height: 200px;
+    max-width: 100%;
+    height: auto;
     border-radius: 50%;
     border: 2px solid #0056b3;
     object-fit: cover;
+    position: absolute;
 }
 .section {
     margin-bottom: 20px;
-    margin-left: 1.5cm; /* Add margin on the left */
-    margin-right: 1.5cm; /* Add margin on the right */
+    margin-left: 5%; /* Add margin on the left */
+    margin-right: 5%; /* Add margin on the right */
 }
 .section-title {
     border-bottom: 2px solid #0056b3;
@@ -58,4 +60,42 @@ h1, h2 {
 }
 .clear {
     clear: both;
+}
+
+/* ======================== */
+/* 💡 Responsive for Mobile */
+/* ======================== */
+@media (max-width: 768px) {
+    .container {
+        margin: 0 10px;
+        padding: 10px;
+    }
+
+    .section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .profile-pic {
+        position: static; /* removes overlap */
+        display: block;
+        margin: 20px auto; /* center horizontally */
+        width: 150px; /* scale down for mobile */
+        height: auto;
+    }
+
+    .experience-date,
+    .experience-location {
+        float: none;
+        display: block;
+        margin-bottom: 5px;
+        text-align: left;
+    }
 }
