@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    flex: 1;
+    padding: 20px;
+    margin: 0 5%; /* Responsive side margins */
+    position: relative;
+    text-decoration: none;
+    border-bottom: none;
+}
+h1, h2 {
+    color: #0056b3;
+}
+.profile-pic {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #0056b3;
+    object-fit: cover;
+    position: absolute;
+}
+.section {
+    margin-bottom: 20px;
+    margin-left: 5%; /* Add margin on the left */
+    margin-right: 5%; /* Add margin on the right */
+}
+.section-title {
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.experience, .project {
+    margin-bottom: 15px;
+}
+.experience-title, .project-title {
+    font-weight: bold;
+}
+.experience-company, .project-details {
+    font-style: italic;
+    color: #555;
+}
+.experience-date {
+    float: right;
+    color: #777;
+}
+.experience-location {
+    float: left;
+    color: #777;
+}
+.clear {
+    clear: both;
+}
+
+/* ======================== */
+/* 💡 Responsive for Mobile */
+/* ======================== */
+@media (max-width: 768px) {
+    .container {
+        margin: 0 10px;
+        padding: 10px;
+    }
+
+    .section {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .profile-pic {
+        position: static; /* removes overlap */
+        display: block;
+        margin: 20px auto; /* center horizontally */
+        width: 150px; /* scale down for mobile */
+        height: auto;
+    }
+
+    .experience-date,
+    .experience-location {
+        float: none;
+        display: block;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+}
