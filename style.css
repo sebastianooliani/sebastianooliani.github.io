@@ -8,6 +8,50 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/* ======================== */
+/* 🎨 Modern Navigation Bar */
+/* ======================== */
+nav {
+    background: linear-gradient(135deg, #0056b3, #0073e6);
+    padding: 15px 30px;
+    margin: 0;
+    box-shadow: 0 4px 12px rgba(0, 86, 179, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a:active {
+    transform: translateY(0);
+}
+
+/* Active page indicator */
+nav a.active {
+    background: rgba(255, 255, 255, 0.3);
+    font-weight: 600;
+}
+
 .container {
     flex: 1;
     padding: 20px;
@@ -16,9 +60,11 @@ body {
     text-decoration: none;
     border-bottom: none;
 }
+
 h1, h2 {
     color: #0056b3;
 }
+
 .profile-pic {
     position: absolute;
     top: 20px;
@@ -27,61 +73,120 @@ h1, h2 {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
-    border: 2px solid #0056b3;
+    border: 3px solid #0056b3;
     object-fit: cover;
-    position: absolute;
+    box-shadow: 0 6px 20px rgba(0, 86, 179, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 86, 179, 0.25);
+}
+
 .section {
     margin-bottom: 20px;
     margin-left: 5%; /* Add margin on the left */
     margin-right: 5%; /* Add margin on the right */
 }
+
 .section-title {
     border-bottom: 2px solid #0056b3;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    position: relative;
 }
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #0073e6, #00a8ff);
+    transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+    width: 100%;
+}
+
 .experience, .project {
     margin-bottom: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.experience:hover, .project:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 .experience-title, .project-title {
     font-weight: bold;
 }
+
 .experience-company, .project-details {
     font-style: italic;
     color: #555;
 }
+
 .experience-date {
     float: right;
     color: #777;
+    font-size: 14px;
+    background: #f0f8ff;
+    padding: 2px 8px;
+    border-radius: 12px;
 }
+
 .experience-location {
     float: left;
     color: #777;
+    font-size: 14px;
 }
+
 .clear {
     clear: both;
+}
+
+/* Social links styling */
+a[href*="github"], a[href*="linkedin"] {
+    transition: transform 0.3s ease;
+}
+
+a[href*="github"]:hover, a[href*="linkedin"]:hover {
+    transform: scale(1.1);
 }
 
 /* ======================== */
 /* 💡 Responsive for Mobile */
 /* ======================== */
 @media (max-width: 768px) {
+    nav {
+        padding: 10px 15px;
+        text-align: center;
+    }
+    
+    nav a {
+        display: inline-block;
+        margin: 3px;
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+
     .container {
         margin: 0 10px;
         padding: 10px;
     }
 
     .section {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin: 10px;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .profile-pic {
@@ -98,5 +203,26 @@ h1, h2 {
         display: block;
         margin-bottom: 5px;
         text-align: left;
+    }
+    
+    .experience-date {
+        background: none;
+        padding: 0;
+    }
+
+    .experience, .project {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 8px 10px;
+    }
+    
+    nav a {
+        font-size: 12px;
+        padding: 6px 12px;
+        margin: 2px;
     }
 }

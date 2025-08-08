@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <a href="index.html" class="active">🏠 Main</a>
+        <a href="education.html">🎓 Education</a>
+        <a href="experience.html">💼 Experience</a>
+        <a href="works.html">🔬 Works</a>
+        <a href="interests.html">🎯 Interests</a>
+        <a href="fav_albums.html">🎵 Albums</a>
+        <a href="fav_books.html">📚 Books</a>
+    </nav>
+
     <div class="container">
         <img src="images/20231010_AmivContact_482_small.jpg" alt="Profile Picture" class="profile-pic">
         <h1>Sebastiano Oliani</h1>
@@ -21,7 +31,7 @@
             <a href="mailto:sebastiano.oliani@gmail.com" style="text-decoration: none; color: #0056b3; font-weight: bold;">
                 sebastiano.oliani@gmail.com
             </a>
-            <br
+            <br>
             <a style="font-size: 16px; color: #555;">Current Location: <strong>Zürich, Switzerland</strong></a>
         </div>
         <div class="section">
@@ -44,121 +54,6 @@
             <br> 
             <br>My mother tongue is Italian, but I speak fluently English <i>und ein bisschen Deutsch</i>.
         </p>
-        </div>
-        <div class="section">
-            <h2 class="section-title">Education</h2>
-            <div class="experience">
-                <span class="experience-title">Master's Degree in Robotics, systems and control</span>
-                <span class="experience-company">ETH Z&uuml;rich</span>
-                <br>
-                <span class="experience-location">Z&uuml;rich, Switzerland</span>
-                <span class="experience-date">September 2022 - April 2025</span>
-                <div class="clear"></div>
-                <ul>
-                    <li>Multidisciplinary Master’s degree focused on robotics, control and AI.</li>
-                    <li>Semester Project at Soft Robotics Lab: <a href="https://github.com/sebastianooliani/semester_project_final/blob/main/Sebastiano_Oliani___Semester_Project_Final.pdf" target="_blank">"Learning a Policy for a Biomimetic Tendon-Driven Hand combined with a Robotic Arm"</a>.</li>
-                    <li>Teaching and Research Assistant at Soft Robotics Lab.</li>
-                    <li>Master Thesis at Computational Robotics Lab: <a href="https://github.com/sebastianooliani/dual-serl" target="_blank">“Two Arms, One Goal: Learning Dual-Robot Manipulation for Material Handling with online Reinforcement Learning”</a>.</li>
-                </ul>
-            </div>
-            <div class="experience" style="margin-top: 40px;"></div>
-            <div class="experience">
-                <span class="experience-title">Bachelor's Degree in Automation Engineering</span>
-                <span class="experience-company">Universit&agrave; di Bologna</span>
-                <br>
-                <span class="experience-location">Bologna, Italy</span>
-                <span class="experience-date">September 2019 - July 2022</span>
-                <div class="clear"></div>
-                <ul>
-                    <li>Bachelor’s degree focused on mechanical design, automation technologies, and control theory.</li>
-                    <li>Thesis project: "Simulation of a sensorless SPMSM drive with I-f starting method".</li>
-                    <li>Resident at Fondazione RUI Torleone, Residential College of Merit (10% acceptance rate).</li>
-                </ul>
-            </div>
-            <!-- Add more experiences as needed -->
-        </div>
-        <div class="section">
-            <h2 class="section-title">Experience</h2>
-            <div class="experience">
-                <span class="experience-title">Data Engineer</span>
-                <span class="experience-company"> Hitachi Energy</span>
-                <br>
-                <span class="experience-location">Lenzburg, Switzerland</span>
-                <span class="experience-date">March 2024 - August 2024</span>
-                <div class="clear"></div>
-                <ul>
-                    <li>Created data pipelines using Python to collect and merge data from different sources, speeding up (10x) the analysis of the production line of IGBT transistors.</li>
-                    <li>Developed a new database on MS SQL to enhance data analysis of machines’ failures.</li>
-                    <li>Presented reports to improve the efficiency of the production line to process, automation, and integration engineers.</li>
-                    <li>Designed custom visualizations with Power BI.</li>
-                    <li>Authored internal software documentation.</li>
-                </ul>
-            </div>
-            <div class="experience" style="margin-top: 40px;"></div>
-            <div class="experience">
-                <span class="experience-title">Research Assistant</span>
-                <span class="experience-company">ETH Z&uuml;rich</span>
-                <br>
-                <span class="experience-location">Z&uuml;rich, Switzerland</span>
-                <span class="experience-date">February 2024 - August 2024</span>
-                <div class="clear"></div>
-                <ul>
-                    <li>Contributed to developing a reinforcement learning pipeline used to train and generate several robotic hands, each one customized to accomplish a different task.</li>
-                    <li>Wrote a Python script to automatically generate custom mechanical features with GMSH.</li>
-                    <li>3D-printed and assembled a dexterous robotic hand, covered it with a silicone sink, and mounted servo motors to control it. Tested possible designs and custom solutions.</li>
-                    <li>Prepared the technical documentation with the different fabrication tricks.</li>
-                </ul>
-            </div>            
-            <div class="experience" style="margin-top: 40px;"></div>
-            <div class="experience">
-                <span class="experience-title">Teaching Assistant - <a href="https://rwr.ethz.ch/" target="_blank">Real-World Robotics</a></span>
-                <span class="experience-company">ETH Z&uuml;rich</span>
-                <br>
-                <span class="experience-location">Z&uuml;rich, Switzerland</span>
-                <span class="experience-date">September 2023 - December 2023</span>
-                <div class="clear"></div>
-                <ul>
-                    <li>Responded to students’ questions and emails while working in a team of 4 people.</li>
-                    <li>Responsible for the 3D printers use.</li>
-                    <li>Published and graded 10 weekly quizzes of 27 students.</li>
-                    <li>Graded the Technical presentation, the Hardware Showcase, and the Teleoperation and Autonomy tests of the “Final Challenge”.</li>
-                </ul>
-            </div>
-            <!-- Add more experiences as needed -->
-        </div>
-        <div class="section">
-            <h2 class="section-title">Works</h2>
-            <div class="project">
-                <span class="project-title"><a href="https://arxiv.org/abs/2412.03279" target="_blank">Rotograb: Combining Biomimetic Hands with Industrial Grippers using a Rotating Thumb</a></span>
-                <div class="project-details">A project that combines biomimetic hands with industrial grippers using a rotating thumb mechanism. This work was presented in a paper accepted at IROS 2024.</div>
-            </div>
-            <div class="project" style="margin-top: 20px;"></div>
-            <div class="project">
-                <span class="project-title"><a href="https://github.com/sebastianooliani/dual-serl/blob/dual_robot/Oliani_two_arms_one_goal.pdf" target="_blank">Two Arms, One Goal: Learning Dual-Robot Manipulation for Material Handling with online Reinforcement Learning</a></span>
-                <div class="project-details">A framework for dual-arm robotic systems using suction cups and online reinforcement learning to manipulate boxes, validated through real-world experiments.</div>
-                <div class="project-details"><a href="https://github.com/sebastianooliani/dual-serl" target="Public Code Repository"></a></div>
-            </div>
-            <!-- Add more projects as needed -->
-        </div>
-        <div class="section">
-            <h2 class="section-title">Interests</h2>
-            <p>Besides my studies, in my free-time I love <strong>listening and playing music, reading <a href="fav_books.html">books</a> or doing outdoor activities</strong>.
-            <br>
-            <br>
-            I have been playing <strong>football</strong> for many years, especially during high school. Now, I am playing it less often, but I still enjoy it.
-            Right now, during my weeks I like <strong>riding my bike and swimming</strong>, which I find more relaxing and less stressful. I also enjoy hiking in the mountains, but I have not done it too much.
-            <br>
-            <br>
-            During high school, I played <strong>electric guitar and bass guitar</strong>. I took lectures of both of them until when I moved to Bologna for my bachelor.
-            I have played in several small concerts and I also recorded two songs (<i>Sweet Dreams</i> by the Eurythmics and <i>Chandelier</i> by Sia) in a studio together with a modern music orchestra. 
-            I recorded the guitar parts for both songs. Unfortunately, I cannot find these recordings anymore, but they are definitely somewhere online.
-            <br>
-            <br>
-            Although it might sound strange, I do not have a favourite music genre, but I listen to a lot of different things, either old or new. 
-            I grow up listening mostly to rock music, and that's why I love to play the guitar and the bass, but
-            I am actually listening to very different things. From hard rock to slow ballads, from jazz to rap, and from rap to disco music. 
-            I love to discover new music and artists. You can read the list of my <a href="fav_albums.html">favourite albums</a> I have listen to.
-            </p>
         </div>
     </div>
 </body>
