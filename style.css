@@ -465,6 +465,8 @@ h1, h2 {
 .university-logo {
     flex-shrink: 0;
     width: 80px;
+    height: 80px;
+    margin-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -472,8 +474,8 @@ h1, h2 {
 }
 
 .university-logo img {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
